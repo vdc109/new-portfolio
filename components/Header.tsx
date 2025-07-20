@@ -30,7 +30,7 @@ const navLinks = [
 const Header: React.FC = () => {
   const { theme, setTheme } = useTheme();
   const { currentSection } = useSection();
-  const [navClassList, setNavClassList] = useState<any>([]);
+  const [navClassList, setNavClassList] = useState<string[]>([]);
   const scroll = useScrollListener();
 
   const mainRef = useRef(null);

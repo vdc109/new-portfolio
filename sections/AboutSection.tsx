@@ -13,7 +13,7 @@ import AboutBgSvg from "@/components/AboutBgSvg";
 import EduGroup from "@/components/EduGroup";
 
 const AboutSection: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
   const isSecOnScreen = useOnScreen(sectionRef);
 
   useEffect(() => {

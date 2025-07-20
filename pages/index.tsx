@@ -9,6 +9,7 @@ import HeroSection from "@/sections/HeroSection";
 import AboutSection from "@/sections/AboutSection";
 import ProjectSection from "@/sections/ProjectSection";
 import Footer from "@/components/Footer";
+import { Props } from "react-rough-notation/dist/RoughNotation/types";
 
 export const meta = {
   description:
@@ -17,7 +18,7 @@ export const meta = {
   type: "website",
   ogImage: ``,
   siteName: "VD Portfolio",
-  imageAlt: "Sat Naing portfolio website",
+  imageAlt: "VD portfolio website",
 };
 
 const Home: NextPage<Props> = ({}) => {
