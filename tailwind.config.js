@@ -17,23 +17,26 @@ module.exports = {
       sans: ['"Jost"', "sans-serif"],
     },
     extend: {
-      colors: {
-        bglight: "#F9FAFB",
-        marrslight: "#1C9A9A",
-        marrsgreen: "#007A7A",
-        marrsdark: "#004D4D",
-        cardlight: "#EFF3F3",
+  colors: {
+    // LIGHT THEME
+    bglight:  "#F8FAFF",  // very pale indigo‑tint background
+    marrslight: "#1E66F5", // primary accent ➊
+    marrsgreen: "#0C4EE8", // primary accent hover
+    marrsdark:  "#0739B4", // accent pressed
 
-        // bgdark: "#2D2D2D",
-        bgdark: "#1D2A35",
-        carrilight: "#57DCB4",
-        carrigreen: "#05CE91",
-        carridark: "#00835B",
-        // carddark: "#383838",
-        carddark: "#22323F",
-        textlight: "#F9FAFB",
-      },
-    },
+    cardlight: "#EEF2FF",  // card / surface
+
+    // DARK THEME
+    bgdark:  "#0E1A2D",    // dark navy background
+    carrilight: "#5CC8FF", // accent on dark ➊
+    carrigreen: "#1FA5FF", // accent hover
+    carridark: "#0072D9",  // accent pressed
+
+    carddark: "#16243B",   // dark card / surface
+    textlight: "#F8FAFF",  // text on dark
+  },
+}
+
   },
   plugins: [
     require("@tailwindcss/typography"),
